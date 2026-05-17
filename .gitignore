@@ -1,0 +1,18 @@
+# Virtual Machines
+VMs/
+
+# VirtualBox
+*.vdi
+*.vbox
+*.vbox-prev
+*.vmdk
+
+# Logs
+*.log
+
+# Snapshots
+Snapshots/
+
+# OS files
+Thumbs.db
+.DS_Store
