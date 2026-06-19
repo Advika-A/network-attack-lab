@@ -39,3 +39,15 @@ Create an isolated virtual cybersecurity laboratory for studying network behavio
 -No testing is performed against third-party systems.
 
 -The environment is intended solely for educational and defensive cybersecurity research.
+
+
+## Learning Outcomes
+-Understanding virtualization architecture
+
+-Understanding virtual networking
+
+-Designing isolated cybersecurity environments
+
+-Building repeatable laboratory workflows
+
+-Establishing a foundation for future monitoring and intrusion detection systems
