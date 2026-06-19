@@ -85,3 +85,13 @@ Source and destination IP addresses
 - Connection behavior
 
 This demonstrates that encrypted traffic can still provide meaningful observability for monitoring and detection systems.
+
+
+### PCAP Capture
+
+A packet capture was recorded using tcpdump and saved to a PCAP file for offline analysis.
+
+```bash
+sudo tcpdump -i enp0s3 -w first_capture.pcap
+```
+For a detailed explanation of the capture setup, interface selection, command options, and generated PCAP file, see pcap_analysis.md.
