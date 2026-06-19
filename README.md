@@ -27,6 +27,24 @@ The primary goal is not offensive exploitation, but understanding:
 - what artifacts they generate,
 - and how defenders observe them inside controlled environments.
 
+## Architechture Diagram
+
+
+                                     Internet
+                                         │
+                                         │
+                                  VirtualBox NAT
+                                         │
+                                         |
+                                Windows Host Machine
+                                         |
+                                         |
+    ┌───────────────────────────────────────────────────────────────────────────┐                            
+    Kali Linux Attacker VM   |   Ubuntu Victim Lab VM  |  Future Monitoring VM 
+        10.0.2.15 (NAT)              10.0.2.15 (NAT)     (Wireshark / IDS / Logging)
+
+    -No direct access to hostel LAN
+    -No interaction with public devices
 ## Ethical Scope
 
 All experimentation is performed inside isolated virtual environments intended only for learning and research purposes.
