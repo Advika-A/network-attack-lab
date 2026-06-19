@@ -41,7 +41,7 @@ The primary goal is not offensive exploitation, but understanding:
                                          |
     ┌───────────────────────────────────────────────────────────────────────────┐                            
     Kali Linux Attacker VM   |   Ubuntu Victim Lab VM  |  Future Monitoring VM 
-        10.0.2.15 (NAT)              10.0.2.15 (NAT)     (Wireshark / IDS / Logging)
+            (NAT)                      (NAT)             (Wireshark / IDS / Logging)
 
     -No direct access to hostel LAN
     -No interaction with public devices
