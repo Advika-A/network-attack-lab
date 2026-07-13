@@ -1,15 +1,5 @@
-Kali (10.0.2.4)
-        │
-        │ ARP Request
-        ▼
-Ubuntu (10.0.2.15)
-        ▲
-        │ ARP Reply
-        │
-        │ ICMP Echo Request
-        ▼
-Ubuntu
-        ▲
-        │ ICMP Echo Reply
-        │
-Kali
+## ARP + ICMP Communication Flow
+
+The following diagram illustrates the communication sequence between the Kali and Ubuntu virtual machines. Kali first resolves Ubuntu's MAC address using an ARP Request/Reply exchange, then sends an ICMP Echo Request (ping). Ubuntu responds with an ICMP Echo Reply, confirming successful network connectivity after address resolution.
+
+![alt text](attack-01.png)
