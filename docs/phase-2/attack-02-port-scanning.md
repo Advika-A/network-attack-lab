@@ -125,6 +125,14 @@ This behavior is characteristic of a TCP SYN (half-open) scan.
 
 ---
 
+## Packet Analysis
+
+The following Wireshark capture illustrates the behavior of a TCP SYN scan. Closed ports respond with `RST, ACK`, while the open HTTP service (TCP port 80) responds with `SYN, ACK`. Nmap then sends a `RST` packet instead of completing the TCP handshake.
+
+![alt text](images/attack-02.png)
+
+--- 
+
 ## Defender Perspective
 
 A network defender would observe:
