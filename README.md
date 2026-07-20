@@ -29,19 +29,8 @@ The primary goal is not offensive exploitation, but understanding:
 
 ## Architechture Diagram
 
-
-                                     Internet
-                                         │
-                                         │
-                                  VirtualBox NAT
-                                         │
-                                         |
-                                Windows Host Machine
-                                         |
-                                         |
-    ┌───────────────────────────────────────────────────────────────────────────┐                            
-    Kali Linux Attacker VM   |   Ubuntu Victim Lab VM  |  Future Monitoring VM 
-            (NAT)                      (NAT)             (Wireshark / IDS / Logging)
+![Lab Architecture](diagrams/lab-architecture.png)
+![Project Architecture](diagrams/project-architecture.png)
 
     -No direct access to hostel LAN
     -No interaction with public devices
