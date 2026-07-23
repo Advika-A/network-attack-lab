@@ -10,6 +10,11 @@ VMs/
 # Logs
 *.log
 
+# Except auth log
+!logs/
+!logs/attack-04/
+!logs/attack-04/auth.log
+
 # Snapshots
 Snapshots/
 

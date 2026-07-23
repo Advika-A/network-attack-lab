@@ -1,0 +1,49 @@
+2026-07-23T16:00:08.337009+00:00 Ubuntu sshd[1428]: Server listening on 0.0.0.0 port 22.
+2026-07-23T16:00:08.339531+00:00 Ubuntu sshd[1428]: Server listening on :: port 22.
+2026-07-23T16:00:22.924523+00:00 Ubuntu useradd[1839]: failed adding user 'vboxadd', exit code: 9
+2026-07-23T16:00:22.928876+00:00 Ubuntu useradd[1840]: failed adding user 'vboxadd', exit code: 9
+2026-07-23T16:00:34.770899+00:00 Ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-07-23T16:00:34.815403+00:00 Ubuntu systemd-logind[835]: New session c1 of user gdm.
+2026-07-23T16:00:34.890746+00:00 Ubuntu (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-07-23T16:00:39.221250+00:00 Ubuntu polkitd[759]: Registered Authentication Agent for unix-session:c1 (system bus name :1.41 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-07-23T16:00:48.980503+00:00 Ubuntu gdm-password]: gkr-pam: unable to locate daemon control file
+2026-07-23T16:00:48.980694+00:00 Ubuntu gdm-password]: gkr-pam: stashed password to try later in open session
+2026-07-23T16:00:48.994770+00:00 Ubuntu gdm-password]: pam_unix(gdm-password:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-23T16:00:49.024499+00:00 Ubuntu systemd-logind[835]: New session 2 of user vboxuser.
+2026-07-23T16:00:49.088054+00:00 Ubuntu (systemd): pam_unix(systemd-user:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-23T16:00:49.664654+00:00 Ubuntu gdm-password]: gkr-pam: unlocked login keyring
+2026-07-23T16:00:50.485625+00:00 Ubuntu gnome-keyring-daemon[3486]: The Secret Service was already initialized
+2026-07-23T16:00:50.487060+00:00 Ubuntu gnome-keyring-daemon[3687]: discover_other_daemon: 1
+2026-07-23T16:00:50.516386+00:00 Ubuntu gnome-keyring-daemon[3694]: discover_other_daemon: 1
+2026-07-23T16:00:50.516464+00:00 Ubuntu gnome-keyring-daemon[3486]: The PKCS#11 component was already initialized
+2026-07-23T16:00:50.516829+00:00 Ubuntu gnome-keyring-daemon[3696]: discover_other_daemon: 1
+2026-07-23T16:00:54.663065+00:00 Ubuntu polkitd[759]: Registered Authentication Agent for unix-session:2 (system bus name :1.79 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-07-23T16:00:56.229894+00:00 Ubuntu gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-07-23T16:00:56.288634+00:00 Ubuntu systemd-logind[835]: Session c1 logged out. Waiting for processes to exit.
+2026-07-23T16:00:56.345814+00:00 Ubuntu systemd-logind[835]: Removed session c1.
+2026-07-23T16:00:56.348918+00:00 Ubuntu polkitd[759]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.41, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-07-23T16:01:59.953377+00:00 Ubuntu pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-23T16:01:59.961410+00:00 Ubuntu pkexec[4564]: vboxuser: Executing command [USER=root] [TTY=unknown] [CWD=/home/vboxuser] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-07-23T16:02:39.255754+00:00 Ubuntu sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser/Desktop ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
+2026-07-23T16:02:39.261710+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-23T16:02:39.274802+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-23T16:02:52.320392+00:00 Ubuntu sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser/Desktop ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
+2026-07-23T16:02:52.330192+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-23T16:02:52.330224+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-23T16:04:05.767596+00:00 Ubuntu sshd[4621]: Invalid user testuser from 10.0.2.4 port 47182
+2026-07-23T16:04:12.667701+00:00 Ubuntu sshd[4621]: pam_unix(sshd:auth): check pass; user unknown
+2026-07-23T16:04:12.672437+00:00 Ubuntu sshd[4621]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.4 
+2026-07-23T16:04:14.450429+00:00 Ubuntu sshd[4621]: Failed password for invalid user testuser from 10.0.2.4 port 47182 ssh2
+2026-07-23T16:04:19.513537+00:00 Ubuntu sshd[4621]: pam_unix(sshd:auth): check pass; user unknown
+2026-07-23T16:04:21.181865+00:00 Ubuntu sshd[4621]: Failed password for invalid user testuser from 10.0.2.4 port 47182 ssh2
+2026-07-23T16:04:24.064617+00:00 Ubuntu sshd[4621]: pam_unix(sshd:auth): check pass; user unknown
+2026-07-23T16:04:26.682748+00:00 Ubuntu sshd[4621]: Failed password for invalid user testuser from 10.0.2.4 port 47182 ssh2
+2026-07-23T16:04:28.123942+00:00 Ubuntu sshd[4621]: Connection closed by invalid user testuser 10.0.2.4 port 47182 [preauth]
+2026-07-23T16:04:28.130701+00:00 Ubuntu sshd[4621]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.4 
+2026-07-23T16:04:35.386736+00:00 Ubuntu sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser/Desktop ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
+2026-07-23T16:04:35.399869+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-23T16:04:35.400048+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-23T16:05:01.895255+00:00 Ubuntu CRON[4677]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-23T16:05:01.942493+00:00 Ubuntu CRON[4677]: pam_unix(cron:session): session closed for user root
+2026-07-23T16:05:01.948045+00:00 Ubuntu CRON[4676]: pam_unix(cron:session): session opened for user www-data(uid=33) by www-data(uid=0)
+2026-07-23T16:05:02.690778+00:00 Ubuntu CRON[4676]: pam_unix(cron:session): session closed for user www-data
