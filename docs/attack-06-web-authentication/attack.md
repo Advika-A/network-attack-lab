@@ -86,21 +86,25 @@ The following figures illustrate the web authentication process against the DVWA
 Figure 1 — DVWA Login Interface
 
 ![alt text](images/attack-06-2.png)
+
 DVWA login interface hosted on the Ubuntu web server, used to generate HTTP authentication requests for analysis.
 
 Figure 2 — Burp Suite Intercepting the HTTP POST Request
 
 ![alt text](images/attack-06-1.png)
+
 Burp Suite intercepting the HTTP POST request submitted during a login attempt. The request body contains the authentication parameters before being forwarded to the web server.
 
 Figure 3 — Wireshark Packet Capture
 
 ![alt text](images/attack-06-3.png)
+
 Wireshark capture showing the HTTP POST authentication request and subsequent HTTP responses exchanged between the Kali attacker and Ubuntu web server.
 
 Figure 4 — Follow HTTP Stream
 
 ![alt text](images/attack-06-4.png)
+
 HTTP stream reconstruction displaying the complete authentication exchange, including the submitted form parameters transmitted over unencrypted HTTP.
 
 
