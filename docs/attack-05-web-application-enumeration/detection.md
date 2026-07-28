@@ -2,7 +2,7 @@
 
 ## Overview
 
-This detection identifies web application directory enumeration activity by analyzing HTTP traffic captured during Phase 2. The detector inspects HTTP requests and responses within the packet capture to identify characteristics commonly associated with automated directory discovery tools such as Gobuster.
+This detection identifies web application directory enumeration activity by analyzing HTTP traffic captured previously. The detector inspects HTTP requests and responses within the packet capture to identify characteristics commonly associated with automated directory discovery tools such as Gobuster.
 
 The implementation demonstrates a simple threshold-based approach for detecting high-volume web enumeration behavior.
 
@@ -81,7 +81,7 @@ python detections/python/detect_web_enum.py captures/phase-2/attack-05/attack-05
 
 ## Validation Results
 
-The detector was validated using the Gobuster-generated packet capture collected during Phase 2.
+The detector was validated using the Gobuster-generated packet capture collected previously.
 
 ### Detection Summary
 

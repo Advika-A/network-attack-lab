@@ -10,7 +10,7 @@ This implementation demonstrates a simple signature-based detection approach usi
 
 ## Detection Objective
 
-Detect ICMP Echo Request (Type 8) packets captured during the host discovery attack performed in Phase 2.
+Detect ICMP Echo Request (Type 8) packets captured during the host discovery attack performed previously.
 
 ---
 
@@ -69,7 +69,7 @@ python detections/python/detect_icmp.py captures/phase-2/attack-01/attack01_ping
 
 ## Validation Results
 
-Execution against the Phase 2 capture successfully detected all ICMP Echo Requests generated during the attack.
+Execution against the previous capture successfully detected all ICMP Echo Requests generated during the attack.
 
 ### Detection Summary
 

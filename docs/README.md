@@ -1,99 +1,82 @@
-# Phase 2 — Network Attack Simulation
+# Documentation
 
 ## Overview
 
-Phase 2 focuses on simulating realistic cyberattacks within a controlled virtual environment to study attacker behavior, observable network traffic, host-level artifacts, and opportunities for defensive monitoring.
+This directory contains the technical documentation for the attack simulations and corresponding detection techniques implemented in this project.
 
-All activities were performed in an isolated VirtualBox NAT Network using dedicated attacker and victim virtual machines. Network traffic was captured using `tcpdump` and analyzed with Wireshark. Each attack was documented immediately after execution to preserve observations and evidence.
-
-The objective of this phase is **observation and analysis**, not exploitation.
+Each attack was executed within an isolated cyber range, captured as network traffic, analyzed using Wireshark, and documented from a defender's perspective. Every attack is paired with a corresponding detection document describing the implemented Python-based detection logic and validation results.
 
 ---
 
-## Lab Environment
+## Documentation Structure
 
-| Component | Configuration |
-|------------|---------------|
-| Attacker | Kali Linux (10.0.2.4) |
-| Victim | Ubuntu Server (10.0.2.15) |
-| Network | VirtualBox NAT Network |
-| Packet Capture | tcpdump |
-| Analysis | Wireshark |
-| Web Server | Apache HTTP Server |
-| Web Application | DVWA |
+Each attack directory contains:
+
+- **Attack Documentation** – Describes the attack objective, methodology, observed artifacts, packet analysis, screenshots, and defender observations.
+- **Detection Documentation** – Explains the detection objective, implementation, detection logic, validation results, limitations, and key takeaways.
 
 ---
 
-## Lab Architecture
+## Attack Scenarios
 
-The following diagram illustrates the cyber range used throughout Phase 2.
-
-![Lab Architecture](../../diagrams/phase-2-attack-workflow.png)
-![Lab Architecture](../../diagrams/lab-architecture.png)
-
----
-
-## Attack Progression
-
-The attacks were intentionally designed to follow the reconnaissance and authentication stages of a realistic intrusion.
-
-| Attack | Description | Documentation |
-|---------|-------------|---------------|
-| Attack 01 | Host Discovery (ICMP) | [attack-01-host-discovery.md](attack-01-host-discovery.md) |
-| Attack 02 | TCP SYN Port Scan | [attack-02-port-scanning.md](attack-02-port-scanning.md) |
-| Attack 03 | Service Enumeration | [attack-03-service-enumeration.md](attack-03-service-enumeration.md) |
-| Attack 04 | SSH Authentication Analysis | [attack-04-ssh-authentication.md](attack-04-ssh-authentication.md) |
-| Attack 05 | Web Application Enumeration | [attack-05-web-application-enum.md](attack-05-web-application-enum.md) |
-| Attack 06 | Web Authentication Analysis | [attack-06-web-authentication-analysis.md](attack-06-web-authentication-analysis.md) |
+| Attack | Description |
+|---------|-------------|
+| Attack 01 | Host Discovery (ICMP) |
+| Attack 02 | TCP SYN Scan |
+| Attack 03 | HTTP Service Enumeration |
+| Attack 04 | SSH Authentication Failures |
+| Attack 05 | Web Enumeration |
+| Attack 06 | Web Authentication |
 
 ---
 
-## Workflow
+## Documentation Workflow
 
-Each attack followed the same repeatable methodology.
+The attack experiments were carried out as follows.
 
-1. Define the attack objective.
-2. Execute the attack from the Kali attacker VM.
-3. Capture network traffic using tcpdump.
-4. Observe host artifacts where applicable.
-5. Analyze packet captures using Wireshark.
-6. Document observations, evidence, and defender insights.
+![Attack Workflow](../diagrams/attack-workflow.png)
+
+Each scenario follows the same repeatable process:
+
+1. Simulate the attack.
+2. Capture network traffic.
+3. Analyze attack artifacts.
+4. Develop a Python-based detection script.
+5. Validate the detection.
+6. Document observations and findings.
 
 ---
 
-## Evidence Collected
+## Documentation Standards
 
-Each attack includes:
+Each attack document includes:
 
-- Packet capture (PCAP)
-- Wireshark analysis
-- Command execution
+- Overview
+- Attack Summary
+- Commands Executed
+- Packet Analysis
+- Network and Host Artifacts
 - Screenshots
-- Network artifacts
-- Host artifacts (where applicable)
-- Defender perspective
-- Detection opportunities
+- Defender Perspective
+- Key Takeaways
+
+Each detection document includes:
+
+- Overview
+- Detection Objective
+- Detection Logic
+- Detection Strategy
+- Implementation
+- Validation Results
+- Sample Output
+- Detection Accuracy
+- Potential False Positives
 - Limitations
-- Key takeaways
+- Defender Perspective
+- Key Takeaways
 
 ---
 
-## Learning Outcomes
+## Purpose
 
-By completing this phase, the following concepts were demonstrated:
-
-- Host discovery using ICMP
-- TCP SYN scanning
-- Service enumeration
-- SSH authentication analysis
-- HTTP directory enumeration
-- Web authentication analysis
-- Packet-level network analysis
-- Correlation of network and host artifacts
-- Defender-oriented observation of attack behavior
-
----
-
-## Next Phase
-
-Phase 3 builds upon the attacks documented in this phase by implementing simple, explainable detection techniques for each attack scenario. The emphasis shifts from generating attack traffic to identifying and analyzing it from a defender's perspective.
+The documentation is intended to provide a structured, reproducible record of the attack simulations and demonstrate how common network attacks can be observed, analyzed, and detected using lightweight, explainable Python-based detection techniques.

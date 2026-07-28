@@ -10,7 +10,7 @@ The implementation uses Python and PyShark to inspect captured traffic and appli
 
 ## Detection Objective
 
-Detect TCP SYN scan activity generated during the Phase 2 network reconnaissance exercise.
+Detect TCP SYN scan activity generated during the network reconnaissance exercise.
 
 ---
 
@@ -88,7 +88,7 @@ python detections/python/detect_syn_scan.py captures/phase-2/attack-02/syn_scan.
 
 ## Validation Results
 
-The detection was validated using the TCP SYN scan generated during Phase 2.
+The detection was validated using the TCP SYN scan generated previously.
 
 ### Detection Summary
 
@@ -134,7 +134,7 @@ Sample Ports     : 1, 3, 4, 6, 7, 9, 13, 17, 19, 20
 
 ## Detection Accuracy
 
-The implementation successfully identified the TCP SYN scan captured during Phase 2.
+The implementation successfully identified the TCP SYN scan captured previously.
 
 The configurable threshold allows the detection sensitivity to be adjusted for different environments.
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This detection identifies repeated web authentication attempts by analyzing HTTP POST requests captured during Phase 2. The detector examines HTTP traffic to identify repeated submissions to the DVWA login page, providing a simple method for detecting suspicious authentication activity.
+This detection identifies repeated web authentication attempts by analyzing HTTP POST requests captured previously. The detector examines HTTP traffic to identify repeated submissions to the DVWA login page, providing a simple method for detecting suspicious authentication activity.
 
 The implementation demonstrates a threshold-based approach for identifying repeated login attempts against a web application.
 
@@ -84,7 +84,7 @@ python detections/python/detect_web_auth.py captures/phase-2/attack-06/attack-06
 
 ## Validation Results
 
-The detector was validated using the HTTP authentication traffic generated during Phase 2.
+The detector was validated using the HTTP authentication traffic generated previously.
 
 ### Detection Summary
 

@@ -84,7 +84,7 @@ python detections/python/detect_ssh_failures.py logs/attack-04/auth.log --thresh
 
 ## Validation Results
 
-The detector was validated using authentication failures generated during Phase 2.
+The detector was validated using authentication failures generated previously.
 
 ### Detection Summary
 

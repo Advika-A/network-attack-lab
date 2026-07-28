@@ -4,7 +4,7 @@
 
 This detection identifies HTTP responses that disclose web server information through the **Server** response header. During service enumeration, attackers often inspect HTTP response headers to identify web server software, version information, and technologies in use. Such information can assist attackers in selecting appropriate exploitation techniques.
 
-This implementation uses Python and PyShark to analyze HTTP traffic captured during Phase 2 and identify responses that expose server identification information.
+This implementation uses Python and PyShark to analyze HTTP traffic captured and identify responses that expose server identification information.
 
 ---
 
@@ -88,7 +88,7 @@ python detections/python/detect_service_enum.py captures/phase-2/attack-03/servi
 
 ## Validation Results
 
-The detection was validated using the service enumeration traffic generated during Phase 2.
+The detection was validated using the service enumeration traffic generated in the pcap.
 
 ### Detection Summary
 
